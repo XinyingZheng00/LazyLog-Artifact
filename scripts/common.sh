@@ -1,4 +1,4 @@
-cons_svr="node4"
+cons_svr="node1"
 dur_svrs=("node1" "node2" "node3")
 
 if [ "$scalable_tput" = "true" ]; then 
@@ -9,8 +9,8 @@ elif [ "$threeway" = "true" ]; then
     shard_bac=("node6" "node8" "node10" "node12" "node14")
     shard_bac1=("node14" "node12" "node8" "node10" "node6")
 else 
-    shard_pri=("node5" "node7" "node9" "node11" "node13")
-    shard_bac=("node6" "node8" "node10" "node12" "node14")
+    shard_pri=("node2")
+    shard_bac=("node3")
 fi
 client_nodes=("node0")
 
