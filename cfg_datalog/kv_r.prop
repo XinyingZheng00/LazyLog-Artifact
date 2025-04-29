@@ -1,0 +1,2 @@
+kv.server_uri=10.10.1.1:31871
+reader=true
