@@ -4,7 +4,7 @@ set -x
 
 threeway="false"
 scalable_tput="false"
-cfg_dir="cfg"
+cfg_dir="$1"
 
 source $(dirname $0)/common.sh
 
@@ -12,7 +12,7 @@ source $(dirname $0)/common.sh
 #   0 -> run expt
 #   
 
-mode="$1"
+mode="$2"
 clients=("1")
 num_shards=("1")
 msg_size=("4096")
@@ -101,9 +101,9 @@ elif [ "$mode" -eq 3 ]; then
     echo $3 $4
     $(mixed_cmd $3 $4)
 elif [ "$mode" -eq 4 ]; then 
-    kill_cons_svr
-    kill_dur_svrs
-    kill_shard_svrs
+    # kill_cons_svr
+    # kill_dur_svrs
+    # kill_shard_svrs
 
     setup_data
     run_shard_svr 1

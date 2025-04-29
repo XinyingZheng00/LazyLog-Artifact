@@ -1,0 +1,9 @@
+shard.client_uri=10.10.1.1:31861
+shard.primary_uri=10.10.1.5:31861
+shard.backup_uri=10.10.1.6:31861
+shard.msg_size=6291456
+shard.stripe_unit_size=1000
+shard.num=1
+shard.folder_path=/data/metadatalog
+shard.threadcount=10
+bootstrap.servers=node-5:9092
